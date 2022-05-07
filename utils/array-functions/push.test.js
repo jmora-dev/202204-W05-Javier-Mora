@@ -1,8 +1,8 @@
 import { push } from './push.js';
 
-describe('Given function length', () => {
+describe('Given function push', () => {
   describe('When receive null as array', () => {
-    test('Then should [null]', () => {
+    test('Then should Error', () => {
       const values = [null];
       expect(() => push(...values)).toThrow(Error);
     });
