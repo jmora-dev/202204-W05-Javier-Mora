@@ -1,0 +1,40 @@
+{
+  "name": "202204-w05-carlos-nunez-javier-mora",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --coverage",
+    "lint": "eslint ."
+  },
+  "author": "Carlos Nuñez y Javier Mora",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "@types/jest": "^27.5.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.0.3",
+    "prettier": "^2.6.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "jsconfig": {
+    "typeAcquisition": {
+      "include": [
+        "jest"
+      ]
+    }
+  }
+}
