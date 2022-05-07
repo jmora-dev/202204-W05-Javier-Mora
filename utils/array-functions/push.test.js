@@ -8,7 +8,7 @@ describe('Given function push', () => {
     });
   });
 
-  describe('When receive [] as array and null as values', () => {
+  describe('When receive [], null', () => {
     test('Then should array [null] and return 1', () => {
       const values = [[], null];
       const result = push(...values);
@@ -17,7 +17,7 @@ describe('Given function push', () => {
     });
   });
 
-  describe('When receive [] as array and 1,2,3 as values', () => {
+  describe('When receive [], 1, 2, 3', () => {
     test('Then should array [1,2,3] and return 3', () => {
       const values = [[], 1, 2, 3];
       const result = push(...values);
@@ -26,7 +26,7 @@ describe('Given function push', () => {
     });
   });
 
-  describe('When receive [1,2,3] as array and 4,5,6 as values', () => {
+  describe('When receive [1,2,3], 4, 5, 6', () => {
     test('Then should array [1,2,3,4,5,6] and return 6', () => {
       const values = [[1, 2, 3], 4, 5, 6];
       const result = push(...values);
