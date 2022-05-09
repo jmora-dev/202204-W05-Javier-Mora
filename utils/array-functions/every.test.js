@@ -1,6 +1,6 @@
 import { every } from './every.js';
 
-describe('Given function some', () => {
+describe('Given function every', () => {
   describe('When receive null', () => {
     test('Then should TypeError', () => {
       const values = [null];

@@ -1,6 +1,6 @@
 import { unshift } from './unshift.js';
 
-describe('Given function shift', () => {
+describe('Given function unshift', () => {
   describe('When receive null', () => {
     test('Then should Error', () => {
       const values = [null];
